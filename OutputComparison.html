@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<head>
+<title>Output Comparison</title>
+</head>
+
+<body>
+    <h1>Output Comparision</h1>
+<a href = "main.html">Main index</a>
+    <a href = "EfficiencyComparison.html">Efficiency Comparision</a>
+    <a href = "SpaceComparision.html">Space Comparision</a>
+    <a href ="OutputComparison.html">Output Comparision</a>
+<p><b>Analysis of both the algorithms and comparison of their performances in terms of output</b> </p>
+<p><b>Paper-1</b></p>
+<p><b><u>Tidy Drawings of Trees</u></b></p>
+<p><b><u>CHARLES WETHERELL and ALFRED SHANNON</u></b></p>
+<p>The algorithm (Algorithm WS) implements following aesthetics while drawing binary trees.</p>
+<p><ul><u><b>Aesthetic-1</b></u></ul></p>
+<p><ul>Nodes of a tree at the same height should lie along a straight line, and the straight lines defining the levels should be parallel.</ul></p>
+<p><ul><u><b>Aesthetic-2</b></u></ul></p>
+<p><ul>In a binary tree, each left son should be positioned left of its father and each right son right of its father.</ul></p>
+<p><ul><u><b>Aesthetic-3</b></u></ul></p>
+</p><ul>A parent should be centered over its children.</ul></p>
+<p>This algorithm doesn't always meet the physical limit.</p>
+<img src="Pictures/Paper-1Algorithm-3.png" />
+<p><b>Fig. 1. Example tree as drawn by Algorithm WS.</b></p>
+
+<p>As our example illustrates, the difficulty with Algorithm WS is that symmetric trees may be drawn asymmetrically, or more generally, a tree
+and its reflection will not always produce mirror image drawings; even the same subtree may appear differently in different parts of the tree.</p>
+<br><br><br>
+<p><b>Paper-2</b></p>
+<p><b><u>Tidier Drawings of Trees</u></b></p>
+<p><b><u>EDWARD M.REINGOLD and JOHN S. TILFORD</u></b></p>
+<p>The algorithm (Algorithm TR) implements following aesthetics while drawing binary trees.</p>
+<p><ul><u><b>Aesthetic-1</b></u></ul></p>
+<p><ul>Nodes of a tree at the same height should lie along a straight line, and the straight lines defining the levels should be parallel.</ul></p>
+<p><ul><u><b>Aesthetic-2</b></u></ul></p>
+<p><ul>In a binary tree, each left son should be positioned left of its father and each right son right of its father.</ul></p>
+<p><ul><u><b>Aesthetic-3</b></u></ul></p>
+</p><ul>A parent should be centered over its children.</ul></p>
+<p><ul><u><b>Aesthetic-4</b></u></ul></p>
+</p><ul>A tree and its mirror image should produce drawings that are reflections of one another; moreover, a sub-tree should be drawn the same way regardless of where it occurs in the tree.</ul></p>
+<p>We consider Aesthetic 4 to be more important than minimum width since the shape of the printed tree and its reflection ought to be independent of its surroundings to aid in human perception.</p>
+<img src="Pictures/Paper-2Algorithm.png" />
+<p><b>Fig. 2. Example tree as drawn by Algorithm TR.<b></p>
+</body>
+</html>
