@@ -1,4 +1,4 @@
-#include <GLUT/glut.h>
+#include <GL/glut.h>
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -612,7 +612,7 @@ int main(int argc,char **argv)
         setup(x.root,0,rmost,lmost);
         petrify(x.root,0);
         preorder(x.root);
-        FILE* filepointer = fopen("/Users/gvsraviteja/Desktop/memory-1.txt","a");;
+        FILE* filepointer = fopen("./memory-1.txt","a");;
         fprintf(filepointer,"%f",(float)memory/1000);
         
         fputs(" ",filepointer);

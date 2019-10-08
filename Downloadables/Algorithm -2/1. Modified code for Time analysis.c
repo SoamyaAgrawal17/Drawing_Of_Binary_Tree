@@ -1,4 +1,4 @@
-#include <GLUT/glut.h>
+#include <GL/glut.h>
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -598,7 +598,7 @@ int main(int argc,char **argv)
         preorder(x.root);
         end = clock();
         float seconds = (float)(end-start)/CLOCKS_PER_SEC;
-        FILE* filepointer = fopen("/Users/gvsraviteja/Desktop/time-1.txt","a");;
+        FILE* filepointer = fopen("./time-1.txt","a");;
         fprintf(filepointer,"%f",seconds);
         
         fputs(" ",filepointer);

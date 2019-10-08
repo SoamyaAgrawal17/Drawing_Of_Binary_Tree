@@ -164,7 +164,7 @@ int main()
         float seconds = (float)(end-start)/CLOCKS_PER_SEC;
 //        printf("time: %f\n",seconds);
         FILE* filepointer;
-        filepointer = fopen("/Users/gvsraviteja/Desktop/time-1.txt","a");
+        filepointer = fopen("./time-1.txt","a");
         fprintf(filepointer,"%f",seconds);
         fputs(" ",filepointer);
         fprintf(filepointer,"%d",xyz);
